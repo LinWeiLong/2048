@@ -1,0 +1,33 @@
+.mainCont{
+	position: relative;
+	width:450px;
+	height:450px;
+	margin:0 auto;
+	border:#ccc solid 1px;;
+	border-radius: 10px;
+	background: rgb(187,173,159);
+}
+.bg-blk{
+	float:left;
+	background: rgb(189,188,186);
+	width:100px;
+	height:100px;
+	margin: 10px 0 0 10px;
+	border-radius: 10px;
+}
+.blk{
+	position: absolute;
+	width:100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 50px;
+	color:#fff;
+	border-radius: 10px;
+}
+.blk2{
+	background: rgb(238,228,215);
+}
+.blk4{
+	background: rgb(238,228,119);
+}
