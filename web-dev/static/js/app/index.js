@@ -1,9 +1,16 @@
 define(function(require,exports,module){
 	'use strict';
-	var blks = require("block.js");
+	var Blks = require("block.js");
+	var Area = require('area.js');
 	var posIndex = [0,0,0,0,
 					0,0,0,0,
 					0,0,0,0,
 					0,0,0,0];
-	blks.newBlk(blks.posCounter(posIndex));
+	var blkRecorder = new Array(16);
+	Area.initArea(blkRecorder,posIndex);
+	$(document).on("keyup",function(e){
+		if(e.keyCode===38){
+			Area.toTop(blkRecorder,posIndex);
+		}
+	});
 });
